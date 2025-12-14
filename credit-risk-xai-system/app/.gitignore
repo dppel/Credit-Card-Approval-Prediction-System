@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Data (Too big for git)
+data/
+*.csv
+
+# IDE settings
+.vscode/
+.idea/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Models (Optional: Comment this out if you WANT to upload the model)
+models/
