@@ -42,3 +42,18 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+### 2. Run the App
+You can run the entire system (Frontend + Backend) using the provided script or Docker.
+
+Manual Method:
+# Terminal 1: Start API
+python -m uvicorn src.api:app --reload
+
+# Terminal 2: Start Dashboard
+python -m streamlit run app/streamlit_app.py
+
+📊 Data Source
+[Kaggle Credit Card Approval Prediction](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction)
+
+📝 License
+MIT License
