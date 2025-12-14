@@ -27,9 +27,8 @@ Financial institutions need transparent decision-making systems. This project pr
 4. **Interface:** Streamlit consumes the API for end-users.
 
 ## 🚀 Quick Start
-### 1. Installation
+### 1. Installation 
 
-```bash
 git clone [https://github.com/YOUR_USERNAME/credit-risk-xai-system.git](https://github.com/YOUR_USERNAME/credit-risk-xai-system.git)
 cd credit-risk-xai-system
 
