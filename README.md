@@ -29,27 +29,27 @@ Financial institutions need transparent decision-making systems. This project pr
 ## 🚀 Quick Start
 ### 1. Installation 
 
-git clone [https://github.com/YOUR_USERNAME/credit-risk-xai-system.git](https://github.com/YOUR_USERNAME/credit-risk-xai-system.git)
+git clone [https://github.com/dppel/credit-risk-xai-system.git](https://github.com/dppel/credit-risk-xai-system.git)
 cd credit-risk-xai-system
 
-### Create & Activate Virtual Environment
+### 1.1 Create & Activate Virtual Environment
 python -m venv venv
 
-#### Windows:
+#### a. Windows:
 .\venv\Scripts\activate
 
-#### Mac/Linux:
+#### b. Mac/Linux:
 source venv/bin/activate
 
-#### Install dependencies
+#### 1.2. Install dependencies
 pip install -r requirements.txt
 
 ### 2. Running the Application
 
-#### Terminal 1: Start API
+#### 2.1 Terminal 1: Start API
 python -m uvicorn src.api:app --reload
 
-#### Terminal 2: Start Dashboard
+#### 2.2 Terminal 2: Start Dashboard
 python -m streamlit run app/streamlit_app.py
 
 ## 📊 Data Source
