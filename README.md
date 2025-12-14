@@ -30,6 +30,7 @@ Financial institutions need transparent decision-making systems. This project pr
 ### 1. Installation 
 
 git clone [https://github.com/dppel/credit-risk-xai-system.git](https://github.com/dppel/credit-risk-xai-system.git)
+
 cd credit-risk-xai-system
 
 ### 1.1 Create & Activate Virtual Environment
