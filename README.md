@@ -27,27 +27,28 @@ Financial institutions need transparent decision-making systems. This project pr
 4. **Interface:** Streamlit consumes the API for end-users.
 
 ## 🚀 Quick Start
-
 ### 1. Installation
+
 ```bash
 git clone [https://github.com/YOUR_USERNAME/credit-risk-xai-system.git](https://github.com/YOUR_USERNAME/credit-risk-xai-system.git)
 cd credit-risk-xai-system
 
 # Create & Activate Virtual Environment
 python -m venv venv
+
 # Windows:
 .\venv\Scripts\activate
+
 # Mac/Linux:
 source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
 
-### 2. Run the App
-You can run the entire system (Frontend + Backend) using the provided script or Docker.
+## 🚀 Running the Application
 
-**Manual Method:**
-```bash
+### Option 1: Manual Startup (Local)
+
 # Terminal 1: Start API
 python -m uvicorn src.api:app --reload
 
