@@ -32,30 +32,28 @@ Financial institutions need transparent decision-making systems. This project pr
 git clone [https://github.com/YOUR_USERNAME/credit-risk-xai-system.git](https://github.com/YOUR_USERNAME/credit-risk-xai-system.git)
 cd credit-risk-xai-system
 
-# Create & Activate Virtual Environment
+### Create & Activate Virtual Environment
 python -m venv venv
 
-# Windows:
+#### Windows:
 .\venv\Scripts\activate
 
-# Mac/Linux:
+#### Mac/Linux:
 source venv/bin/activate
 
-# Install dependencies
+#### Install dependencies
 pip install -r requirements.txt
 
-## 🚀 Running the Application
+### 2. Running the Application
 
-### Option 1: Manual Startup (Local)
-
-# Terminal 1: Start API
+#### Terminal 1: Start API
 python -m uvicorn src.api:app --reload
 
-# Terminal 2: Start Dashboard
+#### Terminal 2: Start Dashboard
 python -m streamlit run app/streamlit_app.py
 
-📊 Data Source
+## 📊 Data Source
 [Kaggle Credit Card Approval Prediction](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction)
 
-📝 License
+## 📝 License
 MIT License
