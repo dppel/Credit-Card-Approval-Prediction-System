@@ -34,24 +34,24 @@ git clone [https://github.com/dppel/credit-risk-xai-system.git](https://github.c
 cd credit-risk-xai-system
 
 ### 1.1 Create & Activate Virtual Environment
-python -m venv venv
+      python -m venv venv
 
 #### a. Windows:
-.\venv\Scripts\activate
+      .\venv\Scripts\activate
 
 #### b. Mac/Linux:
-source venv/bin/activate
+      source venv/bin/activate
 
 #### 1.2. Install dependencies
-pip install -r requirements.txt
+      pip install -r requirements.txt
 
 ### 2. Running the Application
 
 #### 2.1 Terminal 1: Start API
-python -m uvicorn src.api:app --reload
+      python -m uvicorn src.api:app --reload
 
 #### 2.2 Terminal 2: Start Dashboard
-python -m streamlit run app/streamlit_app.py
+      python -m streamlit run app/streamlit_app.py
 
 ## 📊 Data Source
 [Kaggle Credit Card Approval Prediction](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction)
