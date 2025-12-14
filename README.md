@@ -42,10 +42,12 @@ source venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+
 ### 2. Run the App
 You can run the entire system (Frontend + Backend) using the provided script or Docker.
 
-Manual Method:
+**Manual Method:**
+```bash
 # Terminal 1: Start API
 python -m uvicorn src.api:app --reload
 
