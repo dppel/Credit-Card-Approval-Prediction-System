@@ -1,60 +1,51 @@
 # 💳 Credit Risk ML System with Explainable AI (XAI)
 
-[![Python](https://img.shields.io/badge/Python-3.10-blue.svg)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.109-green.svg)](https://fastapi.tiangolo.com/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.30-red.svg)](https://streamlit.io/)
+![Python](https://img.shields.io/badge/Python-3.9%2B-blue)
+![Framework](https://img.shields.io/badge/FastAPI-0.95-green)
+![Frontend](https://img.shields.io/badge/Streamlit-1.25-red)
+![ML](https://img.shields.io/badge/XAI-SHAP%20%7C%20LIME-orange)
+![License](https://img.shields.io/badge/License-MIT-grey)
 
-A complete machine learning system for credit approval prediction. This project demonstrates an end-to-end pipeline including data engineering, model training (XGBoost/RandomForest), API deployment, and real-time explainability using SHAP and LIME.
+A complete machine learning system for credit approval prediction. This project demonstrates an end-to-end pipeline including data engineering, model training, API deployment, and real-time explainability using **SHAP** and **LIME**.
+
+---
 
 ## 🎯 Overview
 
-Financial institutions need transparent decision-making systems. This project predicts whether an applicant is a "High Risk" or "Low Risk" borrower and, crucially, **explains why** the decision was made.
+Financial institutions need transparent decision-making systems. This project predicts whether an applicant is a **"High Risk"** or **"Low Risk"** borrower and, crucially, **explains why** the decision was made using Explainable AI techniques.
 
-### Key Features
-* **Machine Learning:** Automated feature engineering pipeline.
+### 📸 Dashboard Preview
+![Streamlit Dashboard](assets/dashboard_screenshot.png)
+*(Note: Replace this line with a screenshot of your Streamlit App showing a prediction)*
+
+---
+
+## ✨ Key Features
+
+* **Machine Learning Pipeline:** Automated preprocessing and feature engineering.
 * **Explainable AI (XAI):**
     * **SHAP (Global):** Visualizes overall feature impact.
     * **LIME (Local):** Explains individual predictions in plain English.
 * **Backend:** High-performance REST API using **FastAPI**.
 * **Frontend:** Interactive dashboard using **Streamlit**.
-* **Production Ready:** Docker support and Unit Testing included.
+* **Production Focus:** Modular code structure suitable for deployment.
 
-## 🏗️ Architecture
+---
 
-1. **Ingestion:** Raw data processing & feature engineering.
-2. **Training:** Model training (Random Forest/XGBoost) optimized for F1-score.
-3. **Deployment:** FastAPI serves predictions & explanations via JSON.
-4. **Interface:** Streamlit consumes the API for end-users.
+## 🏗️ Architecture & File Structure
 
-## 🚀 Quick Start
-### 1. Installation 
+The project follows a modular architecture ensuring separation of concerns:
 
-git clone [https://github.com/dppel/credit-risk-xai-system.git](https://github.com/dppel/credit-risk-xai-system.git)
-
-cd credit-risk-xai-system
-
-### 1.1 Create & Activate Virtual Environment
-      python -m venv venv
-
-#### a. Windows:
-      .\venv\Scripts\activate
-
-#### b. Mac/Linux:
-      source venv/bin/activate
-
-#### 1.2. Install dependencies
-      pip install -r requirements.txt
-
-### 2. Running the Application
-
-#### 2.1 Terminal 1: Start API
-      python -m uvicorn src.api:app --reload
-
-#### 2.2 Terminal 2: Start Dashboard
-      python -m streamlit run app/streamlit_app.py
-
-## 📊 Data Source
-[Kaggle Credit Card Approval Prediction](https://www.kaggle.com/datasets/rikdifos/credit-card-approval-prediction)
-
-## 📝 License
-MIT License
+```text
+├── app/
+│   └── streamlit_app.py      # Frontend Dashboard
+├── src/
+│   ├── api.py                # FastAPI Backend
+│   ├── model_training.py     # ML Training Script
+│   ├── preprocessing.py      # Data Cleaning & Feature Eng.
+│   └── explainability.py     # SHAP/LIME Logic
+├── models/
+│   └── random_forest.pkl     # Serialized Model
+├── notebooks/                # Jupyter Notebooks for experimentation
+├── requirements.txt          # Dependencies
+└── README.md                 # Documentation
